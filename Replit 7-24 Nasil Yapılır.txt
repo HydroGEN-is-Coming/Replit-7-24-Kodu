@@ -1,0 +1,20 @@
+hydrogen.js isiminde dosya açıp içine bu kodlar:
+
+/////////////////////////////////////////////////////
+
+const express = require('express');
+
+const app = express();
+
+const port = 2323;
+
+app.get('/', (req, res) => res.send('HydroGEN Sitenizi Açık Tutuyor!'));
+ 
+app.listen(port, () => console.log(`HydroGEN sizin için http://localhost:${port} sitesini oluşturdu!`));
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+index.js app.js vb. dosyasınada bu kodu yapıştıralım.
+
+const hydrogen = require("./hydrogen.js")
